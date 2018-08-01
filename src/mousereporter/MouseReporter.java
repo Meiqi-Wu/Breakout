@@ -1,21 +1,39 @@
 package mousereporter;
 
-import javax.swing.JFrame;
+import java.awt.Dimension;
+import java.awt.MouseInfo;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 
-public class MouseReporter extends JFrame{
-	public static void main(String[] args) {
-		JFrame frame = new JFrame("test frame");
-		frame.setSize(300, 400);
-		frame.setVisible(true);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class MouseReporter extends JFrame implements MouseMotionListener{
+	
+	
+
+
+//	private double getMouseX() {
+//		double mouseX = MouseInfo.getPointerInfo().getLocation().getX();
+//		return mouseX;
+//	}
+//	private double getMouseY() {
+//		double mouseY = MouseInfo.getPointerInfo().getLocation().getY();
+//		return mouseY;
+//	}
+
+	@Override
+	public void mouseDragged(MouseEvent e) {
+		// TODO Auto-generated method stub
 		
-		GLabel label = new GLabel("test label hahahahahhahahah");
-		label.setLocation(150, 150);
-		frame.getContentPane().add(label);
-		frame.revalidate();
-		frame.repaint();
-		System.out.println("width: "+label.getWidth());
-		System.out.println("height: "+label.getHeight());
+	}
+
+	@Override
+	public void mouseMoved(MouseEvent e) {
+		int x = e.getX();
+		int y = e.getY();
+		
+		
 	}
 	
 }
