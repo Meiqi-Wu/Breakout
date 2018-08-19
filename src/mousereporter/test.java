@@ -14,20 +14,22 @@ public class test {
 		
 		GLabel label = new GLabel("test label hahahahahhahaha");
 		label.setLocation(150, 150);
+//		label.setPreferredSize(new Dimension(150, 150));
+//		label.setSize(10, 10); // setSize doesn't work for drawString
 		frame.getContentPane().add(label);
 		frame.revalidate();
 		frame.repaint();
 		
 //		JLabel label = new JLabel("test label hahahahahhahahah");
 //		frame.getContentPane().add(label);
-//		label.setSize(150, 150);
+////		label.setSize(150, 150);
 //		label.setPreferredSize(new Dimension(150, 150));
 //		label.setLocation(150, 150);
 //		frame.revalidate();
 //		frame.repaint();
 		
 		
-		System.out.println("width: "+label.getWidth());
-		System.out.println("height: "+label.getHeight());
+//		System.out.println("width: "+label.getW());
+//		System.out.println("height: "+label.getH());
 	}
 }
