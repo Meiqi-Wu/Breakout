@@ -214,7 +214,7 @@ public class BreakOut extends JFrame implements BreakOutConstants, MouseMotionLi
 		}		
 //		println("X: "+this.paddle.getRectX());
 		try {
-			Thread.sleep(20);
+			Thread.sleep(16);
 		} catch(InterruptedException ie) {
 			throw new RuntimeException();
 		}
