@@ -19,7 +19,13 @@ public class GRect extends JComponent{
 		this.w = (int)w; 
 		this.h = (int)h;
 		this.color = Color.BLACK;
-//		this.setSize(this.w, this.h);
+		this.setSize(this.w, this.h);
+		this.isFilled = true;
+	}
+	
+	public GRect() {
+		this.color = Color.BLACK;
+		this.setSize(this.w, this.h);
 		this.isFilled = true;
 	}
 	
